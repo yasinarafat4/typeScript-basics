@@ -10,3 +10,7 @@ Setting up TypeScript
     - Check Installed or not: tsc --version
 
 
+# Compiling TS file
+
+- Step 1: tsc index.ts > index.js > node index.js (To view the result we have to run this 3 command every time after updating file)
+- Step 2: tsc index.ts --watch > node index.js (By doing this we only have to `node index.js` command. It is more easy process than Step 1)
