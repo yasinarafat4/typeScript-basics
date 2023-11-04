@@ -1,0 +1,12 @@
+Setting up TypeScript
+
+# Initilize
+- "npm init -y" (When we want to quickly initialize a new Node.js project, including a `package.json` file)
+- "npx tsc --init" (When we already have a Node.js project and want to configure TypeScript specifically by generating a `tsconfig.json` file.)
+
+# Install TypeScript
+    - Global: npm install -g typescript
+    - Local: npm install --save-dev typescript or npm install typescript --save-dev 
+    - Check Installed or not: tsc --version
+
+
