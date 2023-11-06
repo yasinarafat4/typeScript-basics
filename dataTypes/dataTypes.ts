@@ -4,7 +4,7 @@
   let price: number = 9.99;
 
   // String: Represents a sequence of characters.
-  let name: string = "John";
+  let name: string = "Arafat";
 
   // Boolean: Represents a true or false value.
   let isDone: boolean = false;
@@ -20,6 +20,7 @@
   function logMessage(): void {
     console.log("This is a log message.");
   }
+
   // Null and Undefined: Represent null and undefined values, respectively.
   let n: null = null;
   let u: undefined = undefined;
@@ -28,4 +29,16 @@
   function throwError(message: string): never {
     throw new Error(message);
   }
+
+  // Union: More than one type for variable or function parameter.
+  let userId: string | number;
+  // userId = 101; // no error
+  // userId = "101"; // no error
+  // userId = true; // error
+
+  function userIdDataType(userId: string | number) {
+    console.log(typeof userId);
+  }
+  userIdDataType("123"); // no error
+  userIdDataType(123);
 }
