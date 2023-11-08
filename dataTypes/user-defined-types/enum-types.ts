@@ -10,7 +10,7 @@
   let selectedColor: Color = Color.Red;
 
   // Types (Numeric, String, Heterogeneous)
-  // Numeric enum:
+  // Numeric enum: Assigns numeric values to each of its enum members.
   enum UserRequest {
     ReadData,
     // ReadData = 2,
@@ -20,7 +20,7 @@
   console.log(UserRequest);
   console.log(UserRequest.ReadData); //1st way to access by Numaricly
 
-  // String enum:
+  // String enum: Each member is associated with a descriptive string value, making code more readable and self-explanatory.
   enum UserRequest2 {
     ReadData = "READ_DATA",
     // ReadData = 2,
@@ -30,7 +30,7 @@
   console.log(UserRequest2.SaveData);
   console.log(UserRequest2["UpdateData"]); // 2nd wat to access by String
 
-  // Heterogeneous enum:
+  // Heterogeneous enum: Have both numeric and string values, providing flexibility to assign different types of values
   enum User {
     id = 101,
     name = "anisul",
