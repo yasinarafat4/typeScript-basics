@@ -22,4 +22,14 @@
     function throwError(message) {
         throw new Error(message);
     }
+    // Union: More than one type for variable or function parameter.
+    var userId = void 0;
+    // userId = 101; // no error
+    // userId = "101"; // no error
+    // userId = true; // error
+    function userIdDataType(userId) {
+        console.log(typeof userId);
+    }
+    userIdDataType("123"); // no error
+    userIdDataType(123);
 }
