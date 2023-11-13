@@ -64,5 +64,22 @@
 
   // unshift
   persons.unshift("Habib");
-  console.log(persons);
+  // console.log(persons);
+
+  let users: object[] = [];
+  let user1: { userName: string; userId: number };
+  user1 = { userName: "Yasin", userId: 213425161 };
+  users.push(user1);
+  // console.log(users);
+
+  let user2: { userName: string; userId: number };
+  user2 = { userName: "Arafat", userId: 213425162 };
+  users.push(user2);
+  // console.log(users);
+
+  for (let key in users) {
+    console.log([key]);
+    console.log(users[key]);
+    console.log(users[key]["userName"]);
+  }
 }
